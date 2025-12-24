@@ -10,7 +10,7 @@ FetchContent_Declare(
     GIT_TAG master
     PATCH_COMMAND
         git reset --hard &&
-        git apply ${CMAKE_CURRENT_SOURCE_DIR}/swtg_nonsense.patch
+        git apply --reject --whitespace=fix ${CMAKE_CURRENT_SOURCE_DIR}/swtg_nonsense.patch
 )
 
 FetchContent_MakeAvailable(tiny-aes-c)
