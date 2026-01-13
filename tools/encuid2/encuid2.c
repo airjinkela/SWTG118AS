@@ -5,7 +5,6 @@
 #include <ctype.h>
 #include <errno.h>
 #include <limits.h>
-#include <endian.h>
 #include <unistd.h>
 #include <inttypes.h>
 #include <assert.h>
